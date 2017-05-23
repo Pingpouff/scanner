@@ -1,0 +1,19 @@
+{
+  "name": "scanner",
+  "version": "0.0.1",
+  "description": "file scanner",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pingpouff/scanner.git"
+  },
+  "author": "DDI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pingpouff/scanner/issues"
+  },
+  "homepage": "https://github.com/Pingpouff/scanner#readme"
+}

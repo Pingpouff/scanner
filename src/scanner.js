@@ -1,5 +1,5 @@
-
-const scan = (pathArgument, tree) => {
+const scanner = {};
+scanner.scanTree = (pathArgument, tree) => {
 	var fs = require("fs");
 	var path = require("path");
 	// TODO use async call + promise

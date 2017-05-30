@@ -1,20 +1,8 @@
 const guess = {};
 const regex = '((?:\.?\\w)*)\.[Ss]0*(\\d*)?[Ee]0*(\\d+)';
-guess.name = fileName => {
-    return fileName.split('.S')[0];
-};
-
-guess.season = fileName => {
-    let result = fileName.match(regex);
-    return result;
-}
-
-guess.episode = fileName => {
-    return fileName.split('.E')[1];
-};
 
 guess.what = fileName => {
-    console.log(regex);
+    console.log(regex); // TODO could this be done with deep learning?
     const matches = fileName.match(regex);
     const name = matches[1];
     const season = matches[2];

@@ -1,5 +1,5 @@
 const guess = {};
-const regex = '((?:\.?\\w)*)\.S0*(\\d*)?E0*(\\d+)';
+const regex = '((?:\.?\\w)*)\.[Ss]0*(\\d*)?[Ee]0*(\\d+)';
 guess.name = fileName => {
     return fileName.split('.S')[0];
 };

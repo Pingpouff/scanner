@@ -20,11 +20,11 @@ scanner.scanTree = (pathArgument, tree) => {
 		var dir = { name: file };
 		tree.children.push(dir);
 		if (isCharSupported && fs.lstatSync(currentPath).isDirectory()) {
-			scan(currentPath, dir);
+			scanner.scanTree(currentPath, dir);
 		}
 	});
 }
 
 var Scanner = module.exports = {
-	scan
+	scanner
 }
